@@ -103,6 +103,9 @@ if [[ -d "${RECEIVER_BUILD_DIRECTORY}/dump1090-fa/dump1090" ]] && [[ -d "${RECEI
     echo -e "\e[94m  Updating the local dump1090-fa git repository...\e[97m"
     echo ""
     git pull
+    cd ${RECEIVER_BUILD_DIRECTORY}/dump1090-fa/dump1090
+    git checkout v${DUMP1090_FA_VERSION}
+    cd ${RECEIVER_ROOT_DIRECTORY}
 else
     # A directory containing the source code does not exist in the build directory.
     echo -e "\e[94m  Creating the ADS-B Receiver Project build directory...\e[97m"
@@ -114,6 +117,9 @@ else
     echo -e "\e[94m  Cloning the dump1090-fa git repository locally...\e[97m"
     echo ""
     git clone https://github.com/flightaware/dump1090.git
+    cd ${RECEIVER_BUILD_DIRECTORY}/dump1090-fa/dump1090
+    git checkout v${DUMP1090_FA_VERSION}
+    cd ${RECEIVER_ROOT_DIRECTORY}
 fi
 
 ## BUILD AND INSTALL THE DUMP1090-FA PACKAGE

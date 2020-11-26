@@ -129,6 +129,9 @@ if [[ -d ${RECEIVER_BUILD_DIRECTORY}/piaware_builder ]] && [[ -d ${RECEIVER_BUIL
     echo -e "\e[94m  Updating the local piaware_builder git repository...\e[97m"
     echo ""
     git pull 2>&1
+    cd ${RECEIVER_BUILD_DIRECTORY}/piaware_builder
+    git checkout v${PIAWARE_VERSION}
+    cd ${RECEIVER_ROOT_DIRECTORY}
 else
     # A directory containing the source code does not exist in the build directory.
     echo -e "\e[94m  Entering the ADS-B Receiver Project build directory...\e[97m"
@@ -136,6 +139,9 @@ else
     echo -e "\e[94m  Cloning the piaware_builder git repository locally...\e[97m"
     echo ""
     git clone https://github.com/flightaware/piaware_builder.git 2>&1
+    cd ${RECEIVER_BUILD_DIRECTORY}/piaware_builder
+    git checkout v${PIAWARE_VERSION}
+    cd ${RECEIVER_ROOT_DIRECTORY}
 fi
 
 ## BUILD AND INSTALL THE COMPONENT PACKAGE
