@@ -37,7 +37,7 @@ DefaultZoomLvl   = 7;
 SiteShow    = true;           // true to show a center marker
 SiteLat     = "42.99106979370117"
 SiteLon     = "-74.11241912841797"
-SiteName    = "CasjaysDev"; // tooltip of the marker
+SiteName    = "nishaero"; // tooltip of the marker
 
 // -- Marker settings -------------------------------------
 

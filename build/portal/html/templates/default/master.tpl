@@ -109,7 +109,7 @@
         <footer id="footer">
             <div class="container">
                 <p class="muted credits">
-                    <a href="https://github.com/casjay-forks/adsb-receiver">CasjaysDev ADS-B Server</a>
+                    <a href="https://github.com/nishaero/adsb-receiver">Nishu's ADS-B Server</a>
                 </p>
             </div>
         </footer>

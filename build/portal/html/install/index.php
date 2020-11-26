@@ -594,7 +594,7 @@ EOF;
 <?php
     } else {
 ?>
-<h1>CasjaysDev ADS-B Portal Setup</h1>
+<h1>Nishu's ADS-B Portal Setup</h1>
 <p>Setup of your ADS-B Receiver Web Portal is now complete.</p>
 <p>
     For security reasons it is highly recommended that the installation files be deleted permanently from your device.
@@ -606,7 +606,7 @@ EOF;
 <p>Once you have done so you can log in and administrate your portal <a href="/admin/">here</a>.</p>
 <p>
     If you experienced any issues or have any questions or suggestions you would like to make regarding this project
-    feel free to do so on the projects homepage located at <a href="https://github.com/casjay-forks/adsb-receiver">CasjaysDev ADS-B</a>.
+    feel free to do so on the projects homepage located at <a href="https://github.com/nishaero/adsb-receiver">Nishu's ADS-B</a>.
 </p>
 <?php
     }
